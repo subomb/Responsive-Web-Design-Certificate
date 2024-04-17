@@ -6,14 +6,13 @@ I have successfully completed the freeCodeCamp Responsive Web Design Developer C
 
 - **HTML (Hypertext Markup Language)**: The standard markup language used to create web pages. Through building projects like a cat photo app, I solidified my understanding of HTML basics.
 
-- **CSS (Cascading Style Sheets)**: The language used for designing and layout of web pages. By constructing a penguin project and others, I learned modern CSS techniques, including CSS variables.
+- **CSS (Cascading Style Sheets)**: The language used for designing and layout web pages. By constructing a penguin project and others, I learned modern CSS techniques, including CSS variables.
 
 - **Accessibility**: I implemented best practices for web accessibility to ensure that web pages can be used by as many people as possible.
 
 - **Responsive Design**: I learned to make web pages that adapt to different screen sizes using Flexbox and CSS Grid by building projects like a photo gallery and a magazine-style article layout.
 
-
-![freeCodeCamp Responsive Web Design Certificate]
+![image](https://github.com/subomb/Responsive-Web-Design-Certificate/assets/119646112/5f119a44-5f36-4f71-bbbf-f3eb1c3b7ad0)
 
 ## Completed Lessons and Projects:
 
