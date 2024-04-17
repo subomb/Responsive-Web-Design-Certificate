@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <header>Python Documentation</header>
+    <a class="nav-link" href="#Python_Basics">Python Basics</a>
+    <a class="nav-link" href="#Data_Structures">Data Structures</a>
+    <a class="nav-link" href="#Control_Flow">Control Flow</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Modules">Modules</a>
+    <a class="nav-link" href="#Exception_Handling">Exception Handling</a>
+    <a class="nav-link" href="#List_Comprehensions">List Comprehensions</a>
+    <a class="nav-link" href="#Decorators">Decorators</a>
+    <a class="nav-link" href="#Generators">Generators</a>
+    <a class="nav-link" href="#File_Handling">File Handling</a>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Python_Basics">
+        <header>Python Basics</header>
+        <article>
+            <p>Python is known for its simplicity and readability which makes it an excellent choice for beginners and experienced programmers. Here are the foundational concepts:</p>
+            <ul>
+                <li>Follow the PEP 8 style guide for Python code to improve readability.</li>
+                <li>Use meaningful names for variables and functions to make the code self-documenting.</li>
+                <li>Keep your code simple and avoid unnecessary complexity.</li>
+                <li>Write functions for code that is repeated in multiple places to follow the DRY (Don't Repeat Yourself) principle.</li>
+                <li>Use comments and docstrings to document your code for future reference and for other developers.</li>
+            </ul>
+            <h2>Basic Syntax</h2>
+            <p>Python syntax refers to the set of rules that define how a Python program will be written. Python was designed to be easy to understand and fun to use (its name came from Monty Python so a lot of its beginner tutorials reference it). Fun is a great motivator, and since you’ll be able to build prototypes and tools quickly with Python, many find coding in Python a satisfying experience. Thus, Python has gained popularity for being a beginner-friendly language, and it has replaced Java as the most popular introductory language at Top U.S. Universities.</p>
+            <code>
+                # Python program to check if the input number is odd or even.<br>
+                num = int(input("Enter a number: "))<br>
+                if (num % 2) == 0:<br>
+                    print("{0} is Even".format(num))<br>
+                else:<br>
+                    print("{0} is Odd".format(num))
+            </code>   
+            
+            <h2>Variables and Types</h2>
+            <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory. Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory.</p>
+            <p>Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.</p>
+            <code>
+                # Assigning values to variables<br>
+                integer_var = 10<br>
+                float_var = 10.0<br>
+                string_var = "Hello"<br>
+                list_var = [1, 2, 3]
+            </code>
+        </article>
+    </section>
+    
+    <section class="main-section" id="Data_Structures">
+        <header>Data Structures</header>
+        <article>
+            <p>Python offers a variety of built-in data structures, such as lists, dictionaries, tuples, and sets, each with its unique characteristics and use cases.</p>
+            
+            <h2>Lists</h2>
+            <p>Lists are mutable sequences, typically used to store collections of homogeneous items.</p>
+            <code>
+                my_list = ['apple', 'banana', 'cherry']<br>
+                my_list.append('orange')  # Adds 'orange' to the end of the list<br>
+            </code>   
+            
+            <h2>Dictionaries</h2>
+            <p>Dictionaries store key-value pairs and are optimized for retrieving data. They are mutable and indexed by keys.</p>
+            <code>
+                my_dict = {'name': 'John', 'age': 30}</br>
+                print(my_dict['name'])  # Outputs 'John'</br>
+                my_dict['age'] = 31  # Updates John's age to 31</br>
+            </code>
+
+            <h2>Tuples</h2>
+            <p>Tuples are immutable sequences, typically used to store collections of heterogeneous data.</p>
+            <code>
+                my_tuple = ('apple', 'banana', 'cherry')</br>
+                print(my_tuple[1])  # Outputs 'banana'</br>
+            </code>
+
+            <h2>Sets</h2>
+            <p>Sets are unordered collections of unique elements. They are mutable and useful for membership testing and eliminating duplicate entries.</p>
+            <code>
+                my_set = {'apple', 'banana', 'cherry'}</br>
+                my_set.add('orange')  # Adds 'orange' to the set</br>
+            </code>
+        </article>
+    </section>
+
+    <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>
+            The control flow of a Python program is regulated by conditional statements, loops, and function calls. This is an essential part of writing programs.
+            Also, control flow statements, like if, elif, and else, along with loops (for, while), manage the direction in which your code executes.
+        </p>
+        <h2>Conditional Statements</h2>
+        <code>
+            x = 20</br>
+            if x < 10:</br>
+            &nbsp;&nbsp;print("Less than 10")</br>
+            elif x < 20:</br>
+            &nbsp;&nbsp;print("Less than 20 but not less than 10")</br>
+            else:</br>
+            &nbsp;&nbsp;print("20 or more")</br>        
+        </code>
+
+        <h2>if Statement</h2>
+        <code>
+            if x &lt; 0:<br>
+            &nbsp;&nbsp;print('x is negative')<br>
+            elif x == 0:<br>
+            &nbsp;&nbsp;print('x is zero')<br>
+            else:<br>
+            &nbsp;&nbsp;print('x is positive')
+        </code>
+        
+        <h2>Loops</h2>
+        <p>Python’s for loop iterates over the items of any sequence (list or string), in the order that they appear in the sequence.</p>
+        <code>
+            words = ['cat', 'window', 'defenestrate']<br>
+            for w in words:<br>
+            &nbsp;&nbsp;print(w, len(w))
+        </code>
+        <p>While loops are executed as long as a condition is true.</p>
+        <code>
+            # While loop</br>
+            count = 0</br>
+            while count < 5:</br>
+            &nbsp;&nbsp;print(count)</br>
+            &nbsp;&nbsp;count += 1</br>        
+        </code>
+    </section>
+    
+    <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>Functions in Python are blocks of reusable code that perform a specific action. They help make your code more modular and allow for code reuse. Here's what you need to know about functions in Python:</p>
+        
+        <h2>Defining Functions</h2>
+        <p>To define a function in Python, use the <code>def</code> keyword followed by the function name and parentheses <code>()</code>. Any input parameters should be placed within these parentheses. You can also define parameters inside the parentheses.</p>
+        <code>
+            def greet(name):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"""This function greets the person passed in as a parameter"""<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Hello, " + name + "!")<br>
+        </code>
+        
+        <h2>Key Concepts and Best Practices</h2>
+        <ul>
+            <li>Function names should be lowercase, with words separated by underscores as necessary to improve readability.</li>
+            <li>Always use docstrings to describe what your function does and its parameters.</li>
+            <li>Default arguments allow you to specify default values for parameters. They make functions more flexible and easier to use.</li>
+            <li>Keyword arguments make your function calls more readable and should be used for functions with many parameters.</li>
+            <li>Lambda functions provide a concise way to create anonymous functions for short, simple tasks.</li>
+        </ul>
+        
+        <h2>Example of Using Default and Keyword Arguments</h2>
+        <code>
+            def describe_pet(pet_name, animal_type='dog'):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"""Display information about a pet."""<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(f"I have a {animal_type} named {pet_name}.")<br>
+            <br>
+            # Using default argument<br>
+            describe_pet('Willie')<br>
+            <br>
+            # Using both arguments<br>
+            describe_pet(pet_name='Hank', animal_type='hamster')<br>
+        </code>
+        
+        <h2>Lambda Functions</h2>
+        <p>Lambda functions are small, anonymous functions that can have any number of arguments, but can only have one expression. They are often used for short, simple functions that are not complex enough to justify naming.</p>
+        <code>
+            square = lambda x: x ** 2<br>
+            print(square(5))  # Output: 25
+        </code>
+    </section>
+    
+    <section class="main-section" id="Modules">
+        <header>Modules</header>
+        <p>Modules in Python are simply files with the .py extension containing Python definitions, functions, and statements. Importing a module allows you to access its functions and classes.</p>
+        <code>
+            # Importing a module</br>
+            import math</br>
+            </br>
+            print(math.sqrt(16))  # Outputs 4.0</br>
+            </br>
+            # Importing a specific function</br>
+            from math import sqrt</br>
+            print(sqrt(16))  # Outputs 4.0</br>
+        </code>
+        <p>Modules are a key concept in Python and allow for logical organization of Python code. The standard library provides a vast array of modules that perform various tasks, from mathematical operations to file I/O, and much more.</p>
+    </section>
+    
+    <section class="main-section" id="Exception_Handling">
+        <header>Exception Handling</header>
+        <p>Python has several built-in exceptions that force your program to output an error when something in it goes wrong.</p>
+        <p>However, Python also allows you to create and raise your own exceptions, using the <code>raise</code> statement, allowing for more robust error handling.</p>
+        <code>
+            try:<br>
+            &nbsp;&nbsp;x = 10 / 0<br>
+            except ZeroDivisionError:<br>
+            &nbsp;&nbsp;print("Cannot divide by zero!")<br>
+            finally:<br>
+            &nbsp;&nbsp;print("This block always executes")
+        </code>
+    </section>
+
+    <section class="main-section" id="List_Comprehensions">
+        <header>List Comprehensions</header>
+        <p>List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.</p>
+        <code>
+            # A list comprehension<br>
+            squares = [x**2 for x in range(10)]<br>
+            # Equivalent to:<br>
+            squares = []<br>
+            for x in range(10):<br>
+            &nbsp;&nbsp;squares.append(x**2)
+        </code>
+    </section>
+    
+    <section class="main-section" id="Decorators">
+        <header>Decorators</header>
+        <p>Decorators allow you to modify the behavior of a function or class. Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.</p>
+        <code>
+            def my_decorator(func):<br>
+            &nbsp;&nbsp;def wrapper():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Something is happening before the function is called.")<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;func()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("Something is happening after the function is called.")<br>
+            &nbsp;&nbsp;return wrapper<br>
+            <br>
+            @my_decorator<br>
+            def say_hello():<br>
+            &nbsp;&nbsp;print("Hello!")<br>
+        </code>
+    </section>
+
+    <section class="main-section" id="Generators">
+        <header>Generators</header>
+        <p>Generators are a simple way of creating iterators. They allow you to declare a function that behaves like an iterator, i.e., it can be used in a for loop.</p>
+        <code>
+            def my_generator():<br>
+            &nbsp;&nbsp;yield 1<br>
+            &nbsp;&nbsp;yield 2<br>
+            &nbsp;&nbsp;yield 3<br>
+            <br>
+            for value in my_generator():<br>
+            &nbsp;&nbsp;print(value)
+        </code>
+    </section>
+
+    <section class="main-section" id="File_Handling">
+        <header>File Handling</header>
+        <p>Python simplifies the process of working with files using built-in functions for reading, writing, and manipulating file content.</p>
+        <code>
+            # Reading from a file<br>
+            with open('example.txt', 'r') as file:<br>
+            &nbsp;&nbsp;data = file.read()<br>
+            <br>
+            # Writing to a file<br>
+            with open('example.txt', 'w') as file:<br>
+            &nbsp;&nbsp;file.write("Hello, Python!")
+        </code>
+    </section>    
+</main>
+</body>
+</html>
