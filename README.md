@@ -42,10 +42,10 @@ I have successfully completed the freeCodeCamp Responsive Web Design Developer C
 - [x] Learn CSS Transforms by Building a Penguin
 
 ### Certification Projects
-- [x] Build a Survey Form [view]](<https://codepen.io/Subeom-Kang/full/oNOpYvw>)
-- [x] Build a Tribute Page [view]](<https://codepen.io/Subeom-Kang/full/PogEbYB>)
-- [x] Build a Technical Documentation Page [view]](<https://codepen.io/Subeom-Kang/full/OJGzXER>)
-- [x] Build a Product Landing Page [view]](<https://codepen.io/Subeom-Kang/full/NWmXRQo>)
-- [x] Build a Personal Portfolio Webpage [view]](<https://codepen.io/Subeom-Kang/full/MWRqLOO>)
+- [x] Build a Survey Form [[view]](<https://codepen.io/Subeom-Kang/full/oNOpYvw>)
+- [x] Build a Tribute Page [[view]](<https://codepen.io/Subeom-Kang/full/PogEbYB>)
+- [x] Build a Technical Documentation Page [[view]](<https://codepen.io/Subeom-Kang/full/OJGzXER>)
+- [x] Build a Product Landing Page [[view]](<https://codepen.io/Subeom-Kang/full/NWmXRQo>)
+- [x] Build a Personal Portfolio Webpage [[view]](<https://codepen.io/Subeom-Kang/full/MWRqLOO>)
 
 
